@@ -1,1 +1,1 @@
-Fork this repository to complete the Building an AI Enriched Corporate Training Catalog Project
+Starter Code for Building an AI Enriched Corporate Training Catalog
