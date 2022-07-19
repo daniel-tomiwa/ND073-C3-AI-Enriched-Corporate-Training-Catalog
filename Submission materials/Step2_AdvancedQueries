@@ -1,0 +1,419 @@
+Query1 = "search=*&$select=metadata_author, metadata_title&$filter=(metadata_storage_size gt 1582435)"
+result1:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 1,
+        "metadata_author": " Shun Kodate ",
+        "metadata_title": "Detecting problematic transactions in a consumer-to-consumer e-commerce network"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Sandhya Narayanan ",
+        "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Tu Nguyen Thi Ngoc ",
+        "metadata_title": "Mining aspects of customer’s review on the social network"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Administrator",
+        "metadata_title": "01-CVM0189.pdf"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Rik Das",
+        "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Partheeban Chandrasekaran",
+        "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Boping Zhang",
+        "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform"
+      },
+      {
+        "@search.score": 1,
+        "metadata_author": "Iqbal H. Sarker ",
+        "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions"
+      }
+    ]
+  }
+
+Query2: "search=transfer+learning&$select=metadata_author, metadata_title, metadata_creation_date&$orderby=metadata_creation_date"
+result2:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 3.211836,
+        "metadata_author": null,
+        "metadata_title": null,
+        "metadata_creation_date": "2015-05-16T18:35:45Z"
+      },
+      {
+        "@search.score": 6.210939,
+        "metadata_author": "Zengda Guan",
+        "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction",
+        "metadata_creation_date": "2015-08-12T10:56:23Z"
+      },
+      {
+        "@search.score": 2.0606217,
+        "metadata_author": "Muhammad Taimoor Khan",
+        "metadata_title": "Sentiment analysis and the complex natural language",
+        "metadata_creation_date": "2016-02-02T06:54:52Z"
+      },
+      {
+        "@search.score": 1.1602037,
+        "metadata_author": "Boping Zhang",
+        "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform",
+        "metadata_creation_date": "2018-11-23T11:51:48Z"
+      },
+      {
+        "@search.score": 1.3868015,
+        "metadata_author": "Alina Köchling ",
+        "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+        "metadata_creation_date": "2020-11-19T15:45:16Z"
+      },
+      {
+        "@search.score": 2.0195253,
+        "metadata_author": "Administrator",
+        "metadata_title": "01-CVM0189.pdf",
+        "metadata_creation_date": "2021-04-14T08:29:06Z"
+      }
+    ]
+  }
+
+Query3: "search=*&$select=description,duration,rating_average,level,role,title,source&$filter=(rating_average gt 4.9)"
+result3:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 1,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "administrator",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "devops-engineer",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "technology-manager",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "student",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "administrator",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "ai-engineer",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "devops-engineer",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "student",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "@search.score": 1,
+        "description": "In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.",
+        "duration": 38,
+        "level": "beginner",
+        "rating_average": 5,
+        "role": "technology-manager",
+        "source": "MS Learn",
+        "title": "Get started with Git and GitHub in Visual Studio"
+      }
+    ]
+  }
+
+Query4: "search=Azure&$select=description,duration,rating_average,level,role,title,source&$filter=rating_average gt 4.9&$orderby=duration"
+result4:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 5.3536224,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      },
+      {
+        "@search.score": 5.1468444,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "ai-engineer",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      },
+      {
+        "@search.score": 4.077492,
+        "description": "Create an Azure Cognitive Search solution",
+        "duration": 63,
+        "level": "intermediate",
+        "rating_average": 4.91,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Create an Azure Cognitive Search solution"
+      }
+    ]
+  }
+
+Quert5: "search=GitHub&$select=description,duration,rating_average,level,role,title,source&$filter=rating_average eq 4.8&facet=role&$orderby=duration"
+result5:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "@search.facets": {
+      "role": [
+        {
+          "count": 2,
+          "value": "administrator"
+        },
+        {
+          "count": 2,
+          "value": "developer"
+        },
+        {
+          "count": 2,
+          "value": "devops-engineer"
+        },
+        {
+          "count": 2,
+          "value": "solution-architect"
+        },
+        {
+          "count": 2,
+          "value": "student"
+        }
+      ]
+    },
+    "value": [
+      {
+        "@search.score": 9.988542,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "student",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 7.993041,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "devops-engineer",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 7.993041,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "administrator",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 7.6791477,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 7.6271515,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 5.95617,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "developer",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 4.161462,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "student",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 4.161462,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "administrator",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 3.9406753,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "solution-architect",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      },
+      {
+        "@search.score": 3.9406753,
+        "description": "Learn how to host your personal, organization, and project sites for free with GitHub Pages.",
+        "duration": 72,
+        "level": "beginner",
+        "rating_average": 4.8,
+        "role": "devops-engineer",
+        "source": "MS Learn",
+        "title": "Create and host web sites by using GitHub Pages"
+      }
+    ]
+  }

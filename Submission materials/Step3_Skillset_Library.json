@@ -1,0 +1,68 @@
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DA68E04E4DBAEE\"",
+    "name": "azureblob-skillset",
+    "description": "Skillset created from the portal. skillsetName: azureblob-skillset; contentField: content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/content",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/content"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "keyphrases"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Custom.WebApiSkill",
+        "name": "Springer Lookup",
+        "description": "Extracts the metadata of research papers from springer",
+        "context": "/document",
+        "uri": "https://paperanalyzer.azurewebsites.net/api/springerlookup?code=OsUyVxp5qIF10VrTj6LYxdh0OL3HfMzbUfS9-d3xLTiEAzFuVOl3HQ==",
+        "httpMethod": "POST",
+        "timeout": "PT30S",
+        "batchSize": 10,
+        "degreeOfParallelism": 1,
+        "inputs": [
+          {
+            "name": "ArticleName",
+            "source": "/document/metadata_title"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "publicationName",
+            "targetName": "publicationName"
+          },
+          {
+            "name": "publisher",
+            "targetName": "publisher"
+          },
+          {
+            "name": "doi",
+            "targetName": "doi"
+          },
+          {
+            "name": "publicationDate",
+            "targetName": "publicationDate"
+          }
+        ],
+        "httpHeaders": {}
+      }
+    ],
+    "cognitiveServices": null,
+    "knowledgeStore": null,
+    "encryptionKey": null
+  }

@@ -1,0 +1,184 @@
+Query1: "search=automated+testing&$select=description,duration,rating_average,level,role,title,source"
+result1:
+{
+  "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 23.386398,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "devops-engineer",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 21.31642,
+      "description": "Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.",
+      "duration": 82,
+      "level": "beginner",
+      "rating_average": 4.73,
+      "role": "administrator",
+      "source": "MS Learn",
+      "title": "Run quality tests in your build pipeline by using Azure Pipelines"
+    },
+    {
+      "@search.score": 20.947247,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "developer",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 20.947247,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "administrator",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 20.667126,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "solution-architect",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 20.36079,
+      "description": "Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.",
+      "duration": 82,
+      "level": "beginner",
+      "rating_average": 4.73,
+      "role": "solution-architect",
+      "source": "MS Learn",
+      "title": "Run quality tests in your build pipeline by using Azure Pipelines"
+    },
+    {
+      "@search.score": 20.36079,
+      "description": "Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.",
+      "duration": 82,
+      "level": "beginner",
+      "rating_average": 4.73,
+      "role": "developer",
+      "source": "MS Learn",
+      "title": "Run quality tests in your build pipeline by using Azure Pipelines"
+    },
+    {
+      "@search.score": 20.166874,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "solution-architect",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 19.530651,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "developer",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 19.530651,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "devops-engineer",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    },
+    {
+      "@search.score": 18.90803,
+      "description": "Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.",
+      "duration": 82,
+      "level": "beginner",
+      "rating_average": 4.73,
+      "role": "devops-engineer",
+      "source": "MS Learn",
+      "title": "Run quality tests in your build pipeline by using Azure Pipelines"
+    },
+    {
+      "@search.score": 18.458458,
+      "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+      "duration": 49,
+      "level": "beginner",
+      "rating_average": 4.71,
+      "role": "administrator",
+      "source": "MS Learn",
+      "title": "Run nonfunctional tests in Azure Pipelines"
+    }
+  ]
+}
+
+Query2: "search=sentiment+analysis&$select=metadata_author,metadata_title,metadata_storage_size,metadata_creation_date"
+result2:
+{
+  "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 5.979658,
+      "metadata_storage_size": 1582435,
+      "metadata_author": "Muhammad Taimoor Khan",
+      "metadata_title": "Sentiment analysis and the complex natural language",
+      "metadata_creation_date": "2016-02-02T06:54:52Z"
+    },
+    {
+      "@search.score": 5.455244,
+      "metadata_storage_size": 1280780,
+      "metadata_author": "Tuba Parlar ",
+      "metadata_title": "QER: a new feature selection method for sentiment analysis",
+      "metadata_creation_date": "2018-04-18T08:33:56Z"
+    },
+    {
+      "@search.score": 3.7259274,
+      "metadata_storage_size": 1702203,
+      "metadata_author": "Sandhya Narayanan ",
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter",
+      "metadata_creation_date": "2020-02-24T16:27:45Z"
+    },
+    {
+      "@search.score": 3.6387682,
+      "metadata_storage_size": 1688565,
+      "metadata_author": "Tu Nguyen Thi Ngoc ",
+      "metadata_title": "Mining aspects of customer’s review on the social network",
+      "metadata_creation_date": "2019-02-26T14:27:28Z"
+    },
+    {
+      "@search.score": 3.255628,
+      "metadata_storage_size": 1344318,
+      "metadata_author": "Taiwo Kolajo ",
+      "metadata_title": "Big data stream analysis: a systematic literature review",
+      "metadata_creation_date": "2019-06-04T14:40:29Z"
+    },
+    {
+      "@search.score": 2.2453003,
+      "metadata_storage_size": 1156098,
+      "metadata_author": "P. Ram Mohan Rao ",
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey",
+      "metadata_creation_date": "2018-09-20T05:58:23Z"
+    },
+    {
+      "@search.score": 0.8030621,
+      "metadata_storage_size": 2713106,
+      "metadata_author": "Boping Zhang",
+      "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform",
+      "metadata_creation_date": "2018-11-23T11:51:48Z"
+    }
+  ]
+}

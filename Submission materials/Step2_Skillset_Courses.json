@@ -1,0 +1,36 @@
+{
+  "@odata.context": "https://training-catalogue.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DA686B5CF8ED3D\"",
+  "name": "azuretable-skillset",
+  "description": "Skillset created from the portal. skillsetName: azuretable-skillset; contentField: description; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/description",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/description"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/5b7d2bfa-802a-431d-8c31-1c4069bbb309/resourceGroups/aind-201247/providers/Microsoft.CognitiveServices/accounts/TrainingCatalogueCogServ",
+    "key": "b86377a36cf54bbea085a950d00255fd"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

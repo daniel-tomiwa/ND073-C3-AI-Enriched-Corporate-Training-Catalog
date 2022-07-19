@@ -1,0 +1,444 @@
+Query1: "search=*&$select=description,duration,rating_average,level,role,title,source,entities&$filter=role eq 'architect'"
+result:
+{
+  "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "description": "Learn our company's Principles for the Responsible Use of AI",
+      "duration": 1,
+      "level": "intermediate",
+      "rating_average": 4.3,
+      "role": "architect",
+      "source": "Company Moodle",
+      "title": "Ethics in AI",
+      "entities": "[{\"name\":\"Eileen Diaz\",\"description\":\"Eileen is our Senior Security Engineer responsible for application and service security. She has been with the company for 9 years and enjoys writing Sci-Fi in her spare time.\",\"matches\":[{\"text\":\"eileen diaz\",\"offset\":0,\"length\":11,\"matchDistance\":0.0}]}]"
+    },
+    {
+      "@search.score": 1,
+      "description": "Learn our policies for utilizing encryption including key management for projects",
+      "duration": 3,
+      "level": "advanced",
+      "rating_average": 4.2,
+      "role": "architect",
+      "source": "Company Moodle",
+      "title": "Encryption and security",
+      "entities": "[{\"name\":\"Eileen Diaz\",\"description\":\"Eileen is our Senior Security Engineer responsible for application and service security. She has been with the company for 9 years and enjoys writing Sci-Fi in her spare time.\",\"matches\":[{\"text\":\"eileen diaz\",\"offset\":0,\"length\":11,\"matchDistance\":0.0}]}]"
+    }
+  ]
+}
+
+Query2: "search=Devops taxonomy&$select=description,duration,rating_average,level,role,title,entities&$filter=level eq 'beginner' and role eq 'administrator'&$orderby=rating_average"
+result2:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azuretable-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 2.4628117,
+        "description": "Implement a CI/CD pipeline for Java containers.",
+        "duration": 56,
+        "level": "beginner",
+        "rating_average": 4.27,
+        "role": "administrator",
+        "title": "Automate Java container deployments with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.519845,
+        "description": "Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.",
+        "duration": 62,
+        "level": "beginner",
+        "rating_average": 4.57,
+        "role": "administrator",
+        "title": "Configure infrastructure in Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.7369704,
+        "description": "Run Selenium UI tests, a form of functional testing, in Azure Pipelines.",
+        "duration": 63,
+        "level": "beginner",
+        "rating_average": 4.66,
+        "role": "administrator",
+        "title": "Run functional tests in Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 8.32531,
+        "description": "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. Discover the first two foundation pillars of DevOps: Culture and Lean Product.",
+        "duration": 25,
+        "level": "beginner",
+        "rating_average": 4.69,
+        "role": "administrator",
+        "title": "Introduce the foundation pillars of DevOps: Culture and Lean Product",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.7394316,
+        "description": "Implement a CI/CD pipeline for Azure Functions.",
+        "duration": 46,
+        "level": "beginner",
+        "rating_average": 4.69,
+        "role": "administrator",
+        "title": "Automate Azure Functions deployments with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 11.923943,
+        "description": "Explore two capabilities in the DevOps taxonomy, Continuous Collaboration and Continuous Improvement.",
+        "duration": 17,
+        "level": "beginner",
+        "rating_average": 4.7,
+        "role": "administrator",
+        "title": "Characterize DevOps Continuous Collaboration and Continuous Improvement",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.0670118,
+        "description": "Implement a CI/CD pipeline for multiple containers to Kubernetes.",
+        "duration": 56,
+        "level": "beginner",
+        "rating_average": 4.7,
+        "role": "administrator",
+        "title": "Automate multi-container Kubernetes deployments with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 1.995572,
+        "description": "Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.",
+        "duration": 64,
+        "level": "beginner",
+        "rating_average": 4.7,
+        "role": "administrator",
+        "title": "Create a release pipeline in Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 14.48071,
+        "description": "Explore two capabilities in the DevOps taxonomy, Continuous Security and Continuous Operations.",
+        "duration": 22,
+        "level": "beginner",
+        "rating_average": 4.71,
+        "role": "administrator",
+        "title": "Explore DevOps Continuous Security and Continuous Operations",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 1.995572,
+        "description": "Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.",
+        "duration": 49,
+        "level": "beginner",
+        "rating_average": 4.71,
+        "role": "administrator",
+        "title": "Run nonfunctional tests in Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.4628117,
+        "description": "Implement a CI/CD pipeline for Docker containers.",
+        "duration": 46,
+        "level": "beginner",
+        "rating_average": 4.72,
+        "role": "administrator",
+        "title": "Automate Docker container deployments with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 16.492283,
+        "description": "Explore two capabilities in the DevOps taxonomy, Continuous Delivery and Continuous Quality.",
+        "duration": 18,
+        "level": "beginner",
+        "rating_average": 4.73,
+        "role": "administrator",
+        "title": "Explain DevOps Continuous Delivery and Continuous Quality",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 12.320337,
+        "description": "Explore the first two capabilities in the DevOps taxonomy, Continuous Planning and Continuous Integration.",
+        "duration": 22,
+        "level": "beginner",
+        "rating_average": 4.73,
+        "role": "administrator",
+        "title": "Analyze DevOps Continuous Planning and Continuous Integration",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 9.240658,
+        "description": "Explore Azure DevOps capabilities and get started setting up your own organization knowing what separates elite performers from low performers.",
+        "duration": 25,
+        "level": "beginner",
+        "rating_average": 4.73,
+        "role": "administrator",
+        "title": "Get started with Azure DevOps",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.388692,
+        "description": "Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.",
+        "duration": 82,
+        "level": "beginner",
+        "rating_average": 4.73,
+        "role": "administrator",
+        "title": "Run quality tests in your build pipeline by using Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 7.263488,
+        "description": "There are three things required to make DevOps happen: the cultural component, tools and technology, and architecture. Discover the last two foundation pillars of DevOps, Architecture and Technology!",
+        "duration": 16,
+        "level": "beginner",
+        "rating_average": 4.75,
+        "role": "administrator",
+        "title": "Define the foundation pillars of DevOps: Architecture and Technology",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.6357293,
+        "description": "Set up a continuous integration (CI) pipeline that automates the process of building your application.",
+        "duration": 80,
+        "level": "beginner",
+        "rating_average": 4.75,
+        "role": "administrator",
+        "title": "Create a build pipeline with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.026394,
+        "description": "Design and create a realistic release pipeline that promotes changes to various testing and staging environments.",
+        "duration": 73,
+        "level": "beginner",
+        "rating_average": 4.75,
+        "role": "administrator",
+        "title": "Create a multistage pipeline by using Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.7394316,
+        "description": "Learn along with the Space Game web team the benefits of collaboration through Visual Studio Code and GitHub.",
+        "duration": 87,
+        "level": "beginner",
+        "rating_average": 4.77,
+        "role": "administrator",
+        "title": "Implement a code workflow in your build pipeline by using Git and GitHub",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.1129177,
+        "description": "Implement a CI/CD pipeline for Python.",
+        "duration": 46,
+        "level": "beginner",
+        "rating_average": 4.78,
+        "role": "administrator",
+        "title": "Automate Python deployments with Azure Pipelines",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 6.497077,
+        "description": "Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.",
+        "duration": 68,
+        "level": "beginner",
+        "rating_average": 4.79,
+        "role": "administrator",
+        "title": "Automate DevOps processes by using GitHub Apps",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 5.7318573,
+        "description": "Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.",
+        "duration": 68,
+        "level": "beginner",
+        "rating_average": 4.79,
+        "role": "administrator",
+        "title": "Automate DevOps processes by using GitHub Apps",
+        "entities": "[]"
+      },
+      {
+        "@search.score": 2.0670118,
+        "description": "Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or webpack apps with Azure Pipelines.",
+        "duration": 44,
+        "level": "beginner",
+        "rating_average": 4.9,
+        "role": "administrator",
+        "title": "Automate Node.js deployments with Azure Pipelines",
+        "entities": "[]"
+      }
+    ]
+  }
+
+Query3: "search=transfer learning&$select=metadata_title,publisher,doi&$filter=publisher eq 'Springer' &facet=publicationDate"
+result:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "@search.facets": {
+      "publicationDate": [
+        {
+          "count": 1,
+          "value": "2015-09-01"
+        },
+        {
+          "count": 1,
+          "value": "2015-09-07"
+        },
+        {
+          "count": 1,
+          "value": "2015-12-01"
+        },
+        {
+          "count": 1,
+          "value": "2016-02-03"
+        },
+        {
+          "count": 1,
+          "value": "2018-05-09"
+        },
+        {
+          "count": 1,
+          "value": "2018-09-22"
+        },
+        {
+          "count": 1,
+          "value": "2018-11-27"
+        },
+        {
+          "count": 1,
+          "value": "2019-02-28"
+        },
+        {
+          "count": 1,
+          "value": "2019-05-01"
+        },
+        {
+          "count": 1,
+          "value": "2019-06-06"
+        }
+      ]
+    },
+    "value": [
+      {
+        "@search.score": 7.103678,
+        "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction",
+        "publisher": "Springer",
+        "doi": "10.1007/s40708-015-0017-z"
+      },
+      {
+        "@search.score": 2.274359,
+        "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions",
+        "publisher": "Springer",
+        "doi": "10.1186/s40537-019-0258-4"
+      },
+      {
+        "@search.score": 1.2025484,
+        "metadata_title": "Sentiment analysis and the complex natural language",
+        "publisher": "Springer",
+        "doi": "10.1186/s40294-016-0016-9"
+      },
+      {
+        "@search.score": 1.013947,
+        "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+        "publisher": "Springer",
+        "doi": "10.1007/s40685-020-00134-w"
+      },
+      {
+        "@search.score": 0.9306357,
+        "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform",
+        "publisher": "Springer",
+        "doi": "10.1186/s13640-018-0373-8"
+      },
+      {
+        "@search.score": 0.61182576,
+        "metadata_title": "Technological advancements and opportunities in Neuromarketing: a systematic review",
+        "publisher": "Springer",
+        "doi": "10.1186/s40708-020-00109-x"
+      },
+      {
+        "@search.score": 0.50911975,
+        "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data",
+        "publisher": "Springer",
+        "doi": "10.1186/s40064-015-1515-4"
+      },
+      {
+        "@search.score": 0.42760962,
+        "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis",
+        "publisher": "Springer",
+        "doi": "10.1186/s40493-015-0019-z"
+      },
+      {
+        "@search.score": 0.39152443,
+        "metadata_title": "Mobile marketing recommendation method based on user location feedback",
+        "publisher": "Springer",
+        "doi": "10.1186/s13673-019-0177-6"
+      },
+      {
+        "@search.score": 0.38566437,
+        "metadata_title": "Mining aspects of customer’s review on the social network",
+        "publisher": "Springer",
+        "doi": "10.1186/s40537-019-0184-5"
+      },
+      {
+        "@search.score": 0.22617346,
+        "metadata_title": "A classification method for social information of sellers on social network",
+        "publisher": "Springer",
+        "doi": "10.1186/s13640-020-00545-z"
+      },
+      {
+        "@search.score": 0.22448443,
+        "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter",
+        "publisher": "Springer",
+        "doi": "10.1186/s40537-020-00292-y"
+      },
+      {
+        "@search.score": 0.22396809,
+        "metadata_title": "Detecting problematic transactions in a consumer-to-consumer e-commerce network",
+        "publisher": "Springer",
+        "doi": "10.1007/s41109-020-00330-x"
+      },
+      {
+        "@search.score": 0.21560484,
+        "metadata_title": "Privacy preservation techniques in big data analytics: a survey",
+        "publisher": "Springer",
+        "doi": "10.1186/s40537-018-0141-8"
+      },
+      {
+        "@search.score": 0.13699949,
+        "metadata_title": "QER: a new feature selection method for sentiment analysis",
+        "publisher": "Springer",
+        "doi": "10.1186/s13673-018-0135-8"
+      },
+      {
+        "@search.score": 0.12296747,
+        "metadata_title": "Big data stream analysis: a systematic literature review",
+        "publisher": "Springer",
+        "doi": "10.1186/s40537-019-0210-7"
+      }
+    ]
+  }
+
+Query4: search=Applied Network &$select=metadata_title, publisher, publicationDate&$filter=publicationDate eq '2020-11-01'
+result:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 1.6515605,
+        "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+        "publisher": "Springer",
+        "publicationDate": "2020-11-01"
+      }
+    ]
+  }
+
+Query5: search=Big data &$select=metadata_title, publisher, publicationDate, metadata_author&$filter=doi eq '10.1007/s40685-020-00134-w'
+result5:
+{
+    "@odata.context": "https://training-catalogue.search.windows.net/indexes('azureblob-index')/$metadata#docs(*)",
+    "value": [
+      {
+        "@search.score": 0.3935048,
+        "metadata_author": "Alina Köchling ",
+        "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development",
+        "publisher": "Springer",
+        "publicationDate": "2020-11-01"
+      }
+    ]
+  }
